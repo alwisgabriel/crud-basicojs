@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.todoBox {
+    width: 420px;
+    color: #fff;
+    background: #121212;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* INPUT */
+.inputEntrada {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+#entrada {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+}
+
+#entrada::placeholder {
+    color: #888;
+}
+
+.inputEntrada button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #3f8efc;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.inputEntrada button:hover {
+    background: #2f7ae5;
+}
+
+.inputEntrada button:active {
+    transform: scale(0.98);
+}
+
+
+.tarefasDisponiveis p {
+    color: #e0e0e0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#resultados {
+    list-style: none;
+    margin-top: 12px;
+}
+
+#resultados li {
+    color: #fff;
+    background: #1c1c1c;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#resultados li span {
+    color: #eaeaea;
+    flex: 1;
+    font-size: 14px;
+}
+
+#resultados li button {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+#resultados li button:first-of-type {
+    background: #f0ad4e;
+    color: #000;
+}
+
+#resultados li button:last-of-type {
+    background: #d9534f;
+    color: #fff;
+}
+
+#resultados li button:hover {
+    opacity: 0.85;
+}
+
+#resultados li button:active {
+    transform: scale(0.95);
+}
+
+/* MINI CONSOLE */
+.consoleBox {
+    width: 260px;
+    background: #0d0d0d;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+}
+
+.consoleBox p {
+    color: #00e5ff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#miniConsole {
+    height: 300px;
+    overflow-y: auto;
+    font-size: 12px;
+}
+
+.log {
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+.log.sucesso {
+    color: #4caf50;
+}
+
+.log.erro {
+    color: #f44336;
+}
+
+.log.aviso {
+    color: #ffc107;
+}
+
+.tarefa.concluida span {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.tarefa input[type="checkbox"] {
+    cursor: pointer;
+}
+
+#contadorConcluidas {
+    font-size: 12px;
+    color: #4caf50;
+    margin-top: 4px;
+}

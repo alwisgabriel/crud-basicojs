@@ -1,0 +1,26 @@
+{
+  "name": "crud-basico",
+  "version": "1.0.0",
+  "description": "![License](https://img.shields.io/badge/License-MIT-blue)   ![Language](https://img.shields.io/badge/Language-JavaScript-yellow)   ![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-orange)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+      "url": "https://github.com/alwisgabriel/crud-basicojs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alwisgabriel/crud-basicojs/issues"
+  },
+  "homepage": "https://github.com/alwisgabriel/crud-basicojs#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}
