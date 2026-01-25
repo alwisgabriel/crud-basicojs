@@ -5,7 +5,10 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, "public")));
+
+
+
 
 let tasks = [];
 let idAtual = 1;
@@ -69,6 +72,5 @@ app.delete("/tasks/:id", (req, res) => {
 /* ======================
    START
 ====================== */
-app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
-});
+module.exports = app;
+
